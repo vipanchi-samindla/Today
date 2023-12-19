@@ -1,0 +1,192 @@
+1
+00:00:00,570 --> 00:00:05,880
+OK, so welcome into the AWS management console, I'm just going to give you a quick tour to see
+
+2
+00:00:05,880 --> 00:00:07,360
+how everything works in there.
+
+3
+00:00:07,800 --> 00:00:12,410
+So first of all, on the top right corner, you have the region.
+
+4
+00:00:12,840 --> 00:00:17,360
+And right now I am in us-east-1 which corresponds to U.S., Northern Virginia.
+
+5
+00:00:17,700 --> 00:00:22,950
+But as we can see, we have a lot of regions around the world where we can start using AWS. So my
+
+6
+00:00:22,950 --> 00:00:27,330
+general guideline is to choose a region that is geographically close to you.
+
+7
+00:00:27,750 --> 00:00:32,790
+So because I'm in Europe, maybe a good place to start for me would be Europe, Ireland, eu-west-1.
+
+8
+00:00:33,270 --> 00:00:37,200
+But if you're in another continent, if in Asia, Asia-Pacific, maybe choose one of those.
+
+9
+00:00:37,320 --> 00:00:42,120
+If you're in Africa and you have a specific region in Capetown, if you're in the U.S., you have four
+
+10
+00:00:42,120 --> 00:00:42,930
+regions and so on.
+
+11
+00:00:43,140 --> 00:00:47,970
+And so the idea is that it doesn't have to be a region in your own country, but something that's close
+
+12
+00:00:47,970 --> 00:00:52,690
+to you so that you have the least amount of latency while using AWS and following along with me.
+
+13
+00:00:53,280 --> 00:00:58,830
+OK, so I'm in Ireland. Now with the console, you can look at all the services that are here in the
+
+14
+00:00:58,830 --> 00:01:04,830
+page right here, but you can also access other services on the top left corner in the bar and you get
+
+15
+00:01:04,830 --> 00:01:09,930
+access to a list of all the services available in AWS. As you can see, that's a lot of services.
+
+16
+00:01:09,930 --> 00:01:12,470
+But don't worry, we'll learn the most important ones in this course.
+
+17
+00:01:12,930 --> 00:01:15,930
+Another really good trick that you have is the search box.
+
+18
+00:01:15,960 --> 00:01:17,660
+So I really like the new search bar.
+
+19
+00:01:17,970 --> 00:01:23,490
+So if you type IAM, for example, this is going to take you straight into the IAM service. And on top
+
+20
+00:01:23,490 --> 00:01:24,270
+of your service.
+
+21
+00:01:24,570 --> 00:01:27,810
+Some features of AMI: groups, rolls, policies and users.
+
+22
+00:01:28,110 --> 00:01:31,960
+But this also shows you documentation and marketplace results if you wanted to.
+
+23
+00:01:32,580 --> 00:01:36,110
+So let's have a look at IAM so I'm going to open I am in a new tab.
+
+24
+00:01:37,990 --> 00:01:42,160
+So I'm in IAM, I am and as you can see here on the top right corner, it says global.
+
+25
+00:01:42,460 --> 00:01:46,630
+That's because IAM, as we'll see in this course, is a global service and it does not require region
+
+26
+00:01:46,630 --> 00:01:47,110
+selection.
+
+27
+00:01:47,920 --> 00:01:52,060
+But if I go back and choose another service, for example, EC2.
+
+28
+00:01:53,240 --> 00:01:58,730
+Then I will have the fact that on the top right corner, it says Ireland so EC2 is what's called
+
+29
+00:01:58,730 --> 00:01:59,720
+a regional service.
+
+30
+00:01:59,840 --> 00:02:05,510
+That means that if you operate EC2 in another region, for example, I switch from Ireland to, say,
+
+31
+00:02:05,510 --> 00:02:09,740
+Frankfurt, then I'm going to have a completely new different sets of resources.
+
+32
+00:02:09,979 --> 00:02:11,060
+So resources are scoped.
+
+33
+00:02:11,060 --> 00:02:15,830
+Your region for most services in AWS and you will know if it's a regional service or not by looking
+
+34
+00:02:15,830 --> 00:02:16,940
+at the top right corner.
+
+35
+00:02:16,940 --> 00:02:20,090
+But most services in AWS are regional.
+
+36
+00:02:20,690 --> 00:02:26,480
+The other thing you can look at is the global infrastructure web page on AWS, so you just Google it.
+
+37
+00:02:26,750 --> 00:02:32,990
+And what you can do is that if you click on AWS regional services, then you get access to which services
+
+38
+00:02:32,990 --> 00:02:34,790
+are available within reach, which region.
+
+39
+00:02:35,150 --> 00:02:39,550
+So for U.S. East Ohio, for example, I have the list of all the services available to me.
+
+40
+00:02:39,890 --> 00:02:44,630
+So if in this course you are operating in the region, for example, you're in Cape Town in Africa and
+
+41
+00:02:44,630 --> 00:02:49,490
+you don't have access to a specific service, I'm teaching this course then switch to another region
+
+42
+00:02:49,670 --> 00:02:55,310
+by using the top right corner to one that's different, that will have maybe access to the service we're
+
+43
+00:02:55,310 --> 00:02:55,900
+talking about.
+
+44
+00:02:56,120 --> 00:03:00,500
+This is very important because I want to be able to follow along, but not every service is offered
+
+45
+00:03:00,500 --> 00:03:01,250
+in every region.
+
+46
+00:03:01,370 --> 00:03:04,150
+And that's something you have to know when you're using AWS.
+
+47
+00:03:04,250 --> 00:03:06,820
+OK, so that's it for this lecture.
+
+48
+00:03:07,010 --> 00:03:09,470
+I hope you liked it and I will see you in the next lecture.
+
